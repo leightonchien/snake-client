@@ -16,6 +16,24 @@ const connect = function() {
     conn.write("Name: LC");
   });
 
+  // conn.on("connect", () => {
+  //   conn.write("Move: Up");
+  // });
+
+  // conn.on("connect", () => {
+  //   conn.write("Move: Down");
+  // });
+
+  // conn.on("connect", () => {
+  //   conn.write("Move: Left");
+  // });
+
+  // conn.on("connect", () => {
+  //   conn.write("Move: Right");
+  // });
+
+
+
   // Interpret incoming data as text
   conn.setEncoding("utf8");
   conn.on("data", data => {
